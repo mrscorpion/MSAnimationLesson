@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ContainerVC" customModule="MSAnimationsLesson" customModuleProvider="target">
+            <connections>
+                <outlet property="toggleButton" destination="OpY-Ji-WlB" id="PrR-5E-bwf"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OpY-Ji-WlB">
+                    <state key="normal" title="Animate"/>
+                    <connections>
+                        <action selector="animateButtonTappedWithSender:" destination="-1" eventType="touchUpInside" id="zja-1k-XEd"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ShG-3C-fJy">
+                    <state key="normal" title="Animate2"/>
+                    <connections>
+                        <action selector="KeyframeAnimations:" destination="-1" eventType="touchUpInside" id="tgi-HD-aSv"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="OpY-Ji-WlB" secondAttribute="trailing" constant="20" id="5hv-EO-Idz"/>
+                <constraint firstItem="ShG-3C-fJy" firstAttribute="top" secondItem="OpY-Ji-WlB" secondAttribute="bottom" constant="8" id="GOV-yb-vUZ"/>
+                <constraint firstAttribute="bottom" secondItem="OpY-Ji-WlB" secondAttribute="bottom" constant="50" id="OVV-3T-jld"/>
+                <constraint firstAttribute="bottom" secondItem="ShG-3C-fJy" secondAttribute="bottom" constant="12" id="Wvr-43-MIB"/>
+                <constraint firstItem="OpY-Ji-WlB" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="d7X-jW-gq5"/>
+                <constraint firstAttribute="trailing" secondItem="ShG-3C-fJy" secondAttribute="trailing" constant="20" id="f1Z-Nq-TFh"/>
+                <constraint firstItem="ShG-3C-fJy" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="vP3-qP-JEc"/>
+            </constraints>
+            <point key="canvasLocation" x="-319" y="8"/>
+        </view>
+    </objects>
+</document>
